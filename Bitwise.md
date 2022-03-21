@@ -3,14 +3,22 @@
 ### Why bit manipulation?
  Bit manipulation, in some cases, can obviate or reduce the need to loop over a data structure and can give many-fold speed ups, as bit manipulations are processed in parallel, but the code can become more difficult to write and maintain.
 
-### 1. **Write a function that takes an unsigned integer and returns the number of '1' bits it has.**
-  > Approach:
+### 1. Number of 1 Bits
+> **Write a function that takes an unsigned integer and returns the number of '1' bits it has.**
+
+ [LeetCode](https://leetcode.com/problems/number-of-1-bits/)
+ 
+  `Approach:`
 
    We can perform a bitwise AND with the number and shifitng the right most bit (LSB) to null.
-   And we can repeat this until given number becomes Zero.
+   And we can repeat this until given number becomes Zero.   
      
-### 2. **Given two integers a and b, return the sum of the two integers without using any arithmetic operations.**
-  > Approach:
+### 2. Sum of two Integers
+> **Given two integers a and b, return the sum of the two integers without using any arithmetic operations.**
+
+ [LeetCode](https://leetcode.com/problems/sum-of-two-integers/)
+ 
+  `Approach:`
 
    Let's try this 3 + 2 = 5 , the carry will be with in the brackets i.e "()"
   ```
@@ -58,7 +66,9 @@
   (3&2)<<1    =>  100
   ```
   Now xor them, which will give 101(5) , we can continue this until the carry becomes zero.
-### 3. Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+### 3. Counting Bits
+ > Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.
+
   ```
   Input: n = 5
   Output: [0,1,1,2,1,2]
@@ -70,7 +80,9 @@
   4 --> 100
   5 --> 101
   ```
- > Approach:
+  [LeetCode](https://leetcode.com/problems/counting-bits/)
+  
+   `Approach:`
 
   Let say we have X and Y, such a way that,
   ```
@@ -112,8 +124,17 @@
 
  Therefore, for t\[i] number of set bit(s) will equal to t\[i/2] + i%2;
  
-### 4. Given an array nums containing n distinct numbers in the range \[0, n], return the only number in the range that is missing from the array.
- > Approach:
+### 4. Reverse Bits
+ > Reverse bits of a given 32 bits unsigned integer.
+
+ [LeetCode](https://leetcode.com/problems/reverse-bits/)
+ 
+### 5. Missing Number
+ > Given an array nums containing n distinct numbers in the range \[0, n], return the only number in the range that is missing from the array.
+
+ [LeetCode](https://leetcode.com/problems/missing-number/)
+ 
+  `Approach:`
  
  The basic idea is to use XOR operation. 
  
